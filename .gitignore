@@ -1,18 +1,26 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Xcode
+build/
+DerivedData/
+xcuserdata/
 
-# Other files and folders
-.settings/
+# SwiftPM
+.build/
+Packages/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# CocoaPods
+Pods/
+*.xcworkspace
+Podfile.lock
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Carthage
+Carthage/
+
+# Signing files
+*.p12
+*.mobileprovision
+*.cer
+*.pem
+
+# Misc
+*.xcuserstate
+.DS_Store
