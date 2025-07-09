@@ -1,5 +1,5 @@
 # WordScramble-IOS
-This is a prototype of a weather forecast iOS app.
+This is an iOS game where users are asked to form words using the letters from a given root word. For example, 'lunar' is an accepted answer derived from the root word 'culinary'.
 <br/>
 <img width="363" alt="image" src="https://github.com/user-attachments/assets/4116b2c1-f3a9-4500-bb08-524addf34952" />
 
