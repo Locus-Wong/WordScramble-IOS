@@ -73,6 +73,8 @@ struct ContentView: View {
         newWord = ""
     }
     
+    // UTF-8 is the standard encoding for most text files
+    // It's efficient for English text and compatible with ASCII
     func startGame() {
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt"){
             if let startWords = try? String(
@@ -107,6 +109,8 @@ struct ContentView: View {
         return true
     }
     
+    // NSRange and UITextChecker are part of the Foundation/UIKit frameworks, which are based on Objective-C
+    // Objective-C strings (NSString) internally use UTF-16 encoding
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
