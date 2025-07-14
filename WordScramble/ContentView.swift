@@ -21,6 +21,8 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             Text("Current Score: \(currentScore)")
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding(.trailing)
             List {
                 Section{
                     TextField("Enter your word", text: $newWord)
@@ -38,6 +40,8 @@ struct ContentView: View {
             } .navigationTitle(rootWord)
                 .toolbar{
                     Button("New Word", action: startGame)
+                        .font(.system(size: 25, weight: .semibold))
+                        .frame(minWidth: 44, minHeight: 44) // Ensures good tap target
                 }
                 .onSubmit {
                     addNewWord()
