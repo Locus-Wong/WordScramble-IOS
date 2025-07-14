@@ -12,12 +12,15 @@ struct ContentView: View {
     @State private var rootWord = ""
     @State private var newWord = ""
     
+    @State private var currentScore = 0
+    
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
     
     var body: some View {
         NavigationStack{
+            Text("Current Score: \(currentScore)")
             List {
                 Section{
                     TextField("Enter your word", text: $newWord)
@@ -33,6 +36,9 @@ struct ContentView: View {
                     }
                 }
             } .navigationTitle(rootWord)
+                .toolbar{
+                    Button("New Word", action: startGame)
+                }
                 .onSubmit {
                     addNewWord()
                 }
@@ -51,7 +57,7 @@ struct ContentView: View {
         guard answer.count > 0 else { return }
         
         guard isOriginal(word: answer) else {
-            wordError(title: "Word used already", message: "Be more original")
+            wordError(title: "Word used already", message: "Be more original!")
             return
         }
         
@@ -66,8 +72,15 @@ struct ContentView: View {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
+        
+        guard isTooSimple(word: answer) else {
+            wordError(title: "Word is too simple", message: "Try something longer!")
+            return
+        }
+        
         withAnimation{
             usedWords.insert(answer, at: 0)
+            currentScore += answer.count
         }
         
         newWord = ""
@@ -123,6 +136,10 @@ struct ContentView: View {
         )
         
         return misspelledRange.location == NSNotFound
+    }
+    
+    func isTooSimple(word: String) -> Bool {
+        word.count >= 3
     }
     
     func wordError(title: String, message: String){
