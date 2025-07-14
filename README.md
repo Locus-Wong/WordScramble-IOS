@@ -9,3 +9,5 @@ This is an iOS game where players are given a random eight-letter root word and 
 <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-07-14 at 10 32 05" src="https://github.com/user-attachments/assets/d00e18ea-6308-4752-b2e5-efeb114c45c1" />
 
 <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-07-14 at 10 33 01" src="https://github.com/user-attachments/assets/57437bcf-7642-412b-bfaf-f07046fc7744" />
+
+<img width="448" height="907" alt="image" src="https://github.com/user-attachments/assets/541880b6-7e55-4c3d-810d-2f62c649b466" />
