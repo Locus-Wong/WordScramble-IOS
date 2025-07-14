@@ -6,6 +6,8 @@ This is an iOS game where players are given a random eight-letter root word and 
 <img width="450" height="905" alt="image" src="https://github.com/user-attachments/assets/603de144-34ae-43b3-8654-97895417f592" />
 <img width="450" height="905" alt="image" src="https://github.com/user-attachments/assets/309ff3c4-b602-493c-88dc-b7558c6afb9a" />
 <img width="450" height="905" alt="image" src="https://github.com/user-attachments/assets/ef4a85e4-ca35-4501-9d0c-33b5fbf39b40" />
+
+#New Word
 <img width="450" height="905" alt="image" src="https://github.com/user-attachments/assets/9b4a60ad-2a13-43cd-a7be-9be7ef158261" />
 
 
